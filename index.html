@@ -1,5 +1,32 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login &middot; AdKon MITA</title>
+	<style type="text/css">
+		body{
+			font-family: arial; font-size:12px; padding:10px; 
+		}
+		form{
+			position:relative; margin:20px auto;
+		}
+		h4{
+			color:red; font-size:16px; font-weight: bold;
+		}
+		.row{
+			clear: both; margin-top: 5px; height:30px;
+		}
+		.label{
+			float:left; width:120px;
+		}
+		.login-input{
+			float:left; width:120px;
+		}
+	</style>
+</head>
+<body>
+<?php ?>
 // aktifkan session1
 session_start();
 
@@ -15,3 +42,6 @@ else{
 	//jika sudah ada user yang login
 	echo 'User sudah login '.$txtUserName;	
 }
+<?php 
+</body>
+</html>
