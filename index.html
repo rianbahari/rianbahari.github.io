@@ -1,7 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<title>Login &middot; AdKon MITA</title>
 	<style type="text/css">
@@ -26,22 +23,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 </head>
 <body>
-<?php ?>
-// aktifkan session1
-session_start();
-
-// ambil nilai session txtUserName
-$txtUserName = $_SESSION['txtUserName'];
-
-// validasi apakah txtUserName ada nilainya
-if($txtUserName==''){
-	//jika kosong buka halaman login
-	header('location:login.html');
-}
-else{
-	//jika sudah ada user yang login
-	echo 'User sudah login '.$txtUserName;	
-}
-<?php 
+	<form action="login.php" method="post">
+		<div class="row">
+			<h4>Login Aplikasi</h4>
+		</div>
+		<div class="row">
+			<div class="label">
+				User Name
+			</div>
+			<div class="login-input">
+				<input type="text" name="txtUserName" />
+			</div>		
+		</div>
+		<div class="row">
+			<div class="label">
+				Password
+			</div>
+			<div class="login-input">
+				<input type="password" name="txtUserPassword" />
+			</div>		
+		</div>
+		<div class="row">
+			<div class="label">
+				&nbsp;
+			</div>
+			<div class="login-input">
+				<input type="submit" value="Sign In" />
+			</div>		
+		</div>
+	</form>
 </body>
 </html>
