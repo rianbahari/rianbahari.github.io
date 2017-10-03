@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Login &middot; AdKon MITA</title>
+	<style type="text/css">
+		body{
+			font-family: arial; font-size:12px; padding:10px; 
+		}
+		form{
+			position:relative; margin:20px auto;
+		}
+		h4{
+			color:red; font-size:16px; font-weight: bold;
+		}
+		.row{
+			clear: both; margin-top: 5px; height:30px;
+		}
+		.label{
+			float:left; width:120px;
+		}
+		.login-input{
+			float:left; width:120px;
+		}
+	</style>
+</head>
+<body>
+	<form action="login.php" method="post">
+		<div class="row">
+			<h4>Login Aplikasi</h4>
+		</div>
+		<div class="row">
+			<div class="label">
+				User Name
+			</div>
+			<div class="login-input">
+				<input type="text" name="txtUserName" />
+			</div>		
+		</div>
+		<div class="row">
+			<div class="label">
+				Password
+			</div>
+			<div class="login-input">
+				<input type="password" name="txtUserPassword" />
+			</div>		
+		</div>
+		<div class="row">
+			<div class="label">
+				&nbsp;
+			</div>
+			<div class="login-input">
+				<input type="submit" value="Sign In" />
+			</div>		
+		</div>
+	</form>
+</body>
+</html>

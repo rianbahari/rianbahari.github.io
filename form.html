@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Aplikasi - AdKon MITA</title>
+		<meta />
+	</head>
+	<body>
+		<!-- header -->
+		<div style="width:100%;margin:0;height: 50px;background-color: #272822;color:white;clear:both;">
+			<h3 style="float:left;margin:0;">Administrasi Konsultasi MITA</h3>
+			<a style="float:right;">Logout</a>
+		</div>
+		
+		<!-- content -->
+		<div style="width:100%;margin: 0;background-color: #4b4b4b;color:white;clear:both;">
+			<!-- sidebar menu -->
+			<div style="margin:0;width:20%;float:left;background-color: #2a5598;" >
+				<div style="height:75px;background-color: #9797ff;">
+					Foto
+				</div>
+				<ul style="">
+					<li style=""><a href="#" style="color:white;text-decoration: none;">Input Data
+					<li style=""><a href="#" style="color:white;text-decoration: none;">Update Data</a></li>
+					<li style=""><a href="#" style="color:white;text-decoration: none;">Cetak Data</a></li>
+				</ul>
+			</div>
+			<!-- main content -->
+			<div style="width:80%;float:left;background-color: #ffffff;color:#272822;">
+				<!-- form input data -->
+				<form style="padding:10px;" method="POST" action="form.php">
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;"><h4>Form Perekaman Dokumen</h4></div>
+					<div style="margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Tanggal Konsultasi</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="tanggal konsultasi"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Waktu Mulai Konsultasi</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="waktu mulai konsultasi"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Nama Perusahaan</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="nama perusahaan"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">NPWP</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="npwp"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Alamat Perusahaan</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="textarea" placeholder="alamat perusahaan"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Nama PIC</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="nama PIC"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Kontak PIC</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="kontak PIC"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">CC MITA</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<select name="ccmita">
+								<option>CC MITA 1</option>
+								<option>CC MITA 1</option>
+								<option>CC MITA 1</option>
+								<option>CC MITA 1</option>
+								<option>CC MITA 1</option>
+							</select>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Permasalahan</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<textarea type="textarea" placeholder="permasalahan"></textarea>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Kategori Permasalahan</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="kategori permasalahan"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Jawaban</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<textarea type="text" placeholder="jawaban"></textarea>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Status Permasalahan</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<select name="status">
+								<option>PROSES</option>
+							</select>
+							<input type="text" placeholder="status permasalahan"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Supervisor</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="supervisor"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">Waktu Selesai Konsultasi</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="text" placeholder="waktu selesai konsultasi"/>
+						</div>
+					</div>
+					<div style="clear:both;margin-bottom: 5px;margin-top: 5px;">
+						<div style="float:left;width:250px;">&nbsp;</div>
+						<div style="float:left;margin-bottom: 5px;">
+							<input type="submit" value="submit" />
+							<input type="reset" value="reset" />
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div style="background-color: black;height: 50px;color: white;clear:both;">
+			<a style="float:left;">Developed by Rian Bahari</a>
+			<a style="float:right;">&copy;2017</a>
+		</div>
+	</body>
+</html>
